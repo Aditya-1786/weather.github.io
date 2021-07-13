@@ -27,7 +27,7 @@ form.addEventListener('submit',async (e)=>{
     text.append(bt2);
     text.append(document.createElement('br'));
     text.append(`Temperature: ${api.data.current.feelslike_c}/${api.data.current.temp_c}`);
-    card.classList.add('show');
+    card.styles
     form.elements.city.value = '';
     form.elements.state.value = '';
 })

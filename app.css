@@ -38,8 +38,11 @@ label{
     top:250px;
     left: 43%;
     right: 43%;
-    display: none;
+    visibility:none;
+    opacity: 0;
+    transition: visibility 3s opacity 1s;
 }
 .show{
-    display:inline;
+    visibility: visible;
+    opacity: 1;
 }

@@ -1,40 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="app.css">
-</head>
-<body class="bg">
-    <div class=" container form">
-        <form>
-            <div class="row">
-                <div class="col-4">
-                    <label for="City" class="form-label City">City</label>
-                    <input type="text" class="form-control" name="city" id="City" >   
-                </div>
-                <div class="col-4">
-                    <label for="State" class="form-label">State</label>
-                    <input type="text" class="form-control" name="state" id="State">
-                </div>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-    </div>
-    <div class="card " style="width: 18rem;">
-        <img src="" class="card-img-top" alt="">
-        <div class="card-body">
-          <h5 class="card-title"></h5>
-          <p class="card-text"></p>
-          <a id="cardB" class="btn btn-primary">Done</a>
-        </div>
-      </div>
-
-      <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
-</body>
+<!Doctype html>
+<html>
+	<head>
+		<title>Weather</title>		
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="http://code.jquery.com/jquery-2.1.4.min.js" ></script>
+		<script src="js/script.js" ></script>	
+		<img src="images/bg.jpg"
+				style="width:100%;height:100%;position:absolute;top:0;left:0;z-index:-5000;">
+	
+	</head> 
+	<body>
+		<div class="header">	
+			<a class="button" href="index.html">Home</a>
+			<select id = "select">
+				<option style="color:gray" value="null">------select one option-------</option>
+	
+				<option value="main">Main - TEMP and Pressure</option>
+				<option value="weather">Weather - Main and Description</option>
+				<option value="wind">Wind - Deg and Speed</option>			
+				<option value="sys">Sys - country, sunrise and sunset</option>	
+				<option value="coord">Coordinates - longitude and latitude</option>				
+			</select>		
+			<input type="text" id="input">
+			<button type="button" id="submit">Search!</button> 
+		</div>	
+		<div id="content" class="weather-list">
+			<!--content-->
+		</div>
+	</body>	
 </html>
+
+
+
